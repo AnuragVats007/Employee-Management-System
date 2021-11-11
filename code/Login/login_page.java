@@ -14,7 +14,6 @@ public class login_page {
         emp.put("Ashleysha", "Sohala");
         emp.put("Tanya", "Bharti");
 
-        String INVALID_MENU_CHOICE = ">>> Invalid menu choice! Try again.";
         int choice;
         String emp_name, emp_pass;
         boolean flag = true;
@@ -48,7 +47,7 @@ public class login_page {
             System.exit(0);
             break;
         default:
-            System.out.println(INVALID_MENU_CHOICE);
+            System.out.println(">>> Invalid menu choice! Try again.");
             break;
         }
         return flag;

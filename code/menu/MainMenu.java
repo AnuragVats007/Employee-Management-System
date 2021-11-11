@@ -13,8 +13,6 @@ public class MainMenu {
 
     private final StatisticsMenu statisticsMenu;
 
-    protected static final String INVALID_MENU_CHOICE = ">>> Invalid menu choice! Try again.";
-
     public MainMenu() {
         employeeManager = new EmployeeManager();
         systemInput = new SystemInput();
@@ -43,7 +41,7 @@ public class MainMenu {
         case 3:
             return false;
         default:
-            System.out.println(INVALID_MENU_CHOICE);
+            System.out.println(">>> Invalid menu choice! Try again.");
             break;
         }
         return true;

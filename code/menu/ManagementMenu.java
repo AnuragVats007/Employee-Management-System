@@ -55,7 +55,7 @@ class ManagementMenu {
             employeeManager.displayAll();
             break;
         default:
-            System.out.println(MainMenu.INVALID_MENU_CHOICE);
+            System.out.println(">>> Invalid menu choice! Try again.");
             break;
         }
 
@@ -175,5 +175,4 @@ class ManagementMenu {
             System.out.println(">>> Error! Failure to register employee. Bad input?");
         }
     }
-
 }

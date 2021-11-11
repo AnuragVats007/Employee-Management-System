@@ -50,7 +50,7 @@ class StatisticsMenu {
             employeeStatistics.displayMenPercentageOfWorkRole();
             break;
         default:
-            System.out.println(MainMenu.INVALID_MENU_CHOICE);
+            System.out.println(">>> Invalid menu choice! Try again.");
             break;
         }
 
