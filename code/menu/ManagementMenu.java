@@ -145,10 +145,8 @@ class ManagementMenu {
     }
 
     private void registerEmployee() {
-        System.out.print("First name: ");
+        System.out.print("Name: ");
         String name = systemInput.getString().trim();
-        //System.out.print("Last name: ");
-        //String lname = systemInput.getString().trim();
         System.out.print("Age: ");
         int age = systemInput.getInt();
         System.out.print("Salary: ");
