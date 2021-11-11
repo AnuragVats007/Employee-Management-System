@@ -108,15 +108,13 @@ class ManagementMenu {
         boolean success;
         switch (option) {
         case 3: {
-            System.out.print("New first name: ");
-            String fname = systemInput.getString().trim();
-            System.out.print("New last name: ");
-            String lname = systemInput.getString().trim();
-            success = employeeManager.update(employeeId, fname + " " + lname, 0, null, null, null);
+            System.out.print("New (corrected) name: ");
+            String name = systemInput.getString().trim();
+            success = employeeManager.update(employeeId, name, 0, null, null, null);
             break;
         }
         case 4: {
-            System.out.print("New (corrected) age (YYYYMMDD): ");
+            System.out.print("New (corrected) age: ");
             int age = systemInput.getInt();
             success = employeeManager.update(employeeId, null, age, null, null, null);
             break;
