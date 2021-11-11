@@ -39,6 +39,7 @@ public class MainMenu {
             }
             break;
         case 3:
+            System.out.println("THANKS FOR VISITING...");
             return false;
         default:
             System.out.println(">>> Invalid menu choice! Try again.");

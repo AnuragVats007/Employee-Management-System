@@ -49,7 +49,7 @@ class ManagementMenu {
             updateEmployee(option);
             break;
         case 7:
-            searchEmployee(option);
+            searchEmployee();
             break;
         case 8:
             employeeManager.displayAll();
@@ -95,17 +95,10 @@ class ManagementMenu {
         return profession;
     }
 
-    private void searchEmployee(int option) {
-        switch (option) {
-        case 7: {
-            System.out.print("Employee ID number: ");
-            int employeeId = systemInput.getInt();
-            employeeManager.search(employeeId, null, null);
-            break;
-        }
-        default:
-            break;
-        }
+    private void searchEmployee() {
+        System.out.print("Employee ID number: ");
+        int employeeId = systemInput.getInt();
+        employeeManager.search(employeeId, null, null);
     }
 
     private void updateEmployee(int option) {
@@ -153,9 +146,9 @@ class ManagementMenu {
 
     private void registerEmployee() {
         System.out.print("First name: ");
-        String fname = systemInput.getString().trim();
-        System.out.print("Last name: ");
-        String lname = systemInput.getString().trim();
+        String name = systemInput.getString().trim();
+        //System.out.print("Last name: ");
+        //String lname = systemInput.getString().trim();
         System.out.print("Age: ");
         int age = systemInput.getInt();
         System.out.print("Salary: ");
@@ -169,7 +162,7 @@ class ManagementMenu {
         } else if (gender == 2) {
             genderType = Gender.WOMAN;
         }
-        if (employeeManager.add(fname + " " + lname, age, profession, salary, genderType)) {
+        if (employeeManager.add(name, age, profession, salary, genderType)) {
             System.out.println(">>> Employee successfully registered!");
         } else {
             System.out.println(">>> Error! Failure to register employee. Bad input?");
