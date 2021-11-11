@@ -1,8 +1,7 @@
 package menu;
 
-import InputHandling.SystemInput;
-import employee.Gender;
-import employee.Profession;
+import InputHandling.*;
+import employee.*;
 import management.EmployeeManager;
 
 class ManagementMenu {
@@ -58,10 +57,8 @@ class ManagementMenu {
             System.out.println(">>> Invalid menu choice! Try again.");
             break;
         }
-
         System.out.println("Press Enter to continue...");
         systemInput.getString();
-
         return true;
     }
 

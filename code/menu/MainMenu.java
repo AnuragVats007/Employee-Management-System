@@ -1,6 +1,6 @@
 package menu;
 
-import InputHandling.SystemInput;
+import InputHandling.*;
 import management.EmployeeManager;
 
 public class MainMenu {
@@ -51,5 +51,4 @@ public class MainMenu {
     public EmployeeManager getEmployeeManager() {
         return employeeManager;
     }
-
 }
